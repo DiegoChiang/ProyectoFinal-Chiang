@@ -1,0 +1,58 @@
+.itemList {
+  padding: 26px 0 60px 0;
+}
+
+.itemList__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.itemList__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.itemList__subtitle {
+  margin: 8px 0 0 0;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.itemList__grid {
+  margin-top: 18px;
+  min-height: 420px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: flex;
+  align-items: stretch;
+}
+
+.itemList__messageBox {
+  width: 100%;
+  border: 2px dashed rgba(106, 63, 58, 0.18);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.55);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itemList__messageTitle {
+  margin: 0;
+  color: var(--brand);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.itemList__messageText {
+  margin: 10px 0 0 0;
+  color: rgba(31, 31, 31, 0.6);
+  line-height: 1.5;
+}

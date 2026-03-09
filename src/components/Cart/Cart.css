@@ -1,0 +1,143 @@
+.cartView {
+  padding: 26px 0 60px 0;
+}
+
+.cartView__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.cartView__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.cartView__subtitle {
+  margin: 8px 0 0 0;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.cartView__empty {
+  margin-top: 18px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.cartView__emptyTitle {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.cartView__emptyText {
+  margin: 10px 0 0 0;
+  line-height: 1.6;
+  color: rgba(31, 31, 31, 0.72);
+}
+
+.cartView__link {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--pill);
+  border: 1px solid var(--pill-border);
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.cartView__content {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.cartView__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cartView__summary {
+  position: sticky;
+  top: 90px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.cartView__summaryTitle {
+  margin: 0;
+  font-size: 20px;
+  color: var(--brand);
+}
+
+.cartView__summaryBox {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cartView__summaryRow {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--text);
+}
+
+.cartView__actions {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cartView__clearButton,
+.cartView__checkoutLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.cartView__clearButton {
+  border: 1px solid rgba(196, 54, 54, 0.16);
+  background: rgba(196, 54, 54, 0.08);
+  color: #9c2e2e;
+  cursor: pointer;
+}
+
+.cartView__checkoutLink {
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .cartView__content {
+    grid-template-columns: 1fr;
+  }
+
+  .cartView__summary {
+    position: static;
+  }
+}

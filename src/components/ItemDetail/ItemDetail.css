@@ -1,0 +1,140 @@
+.itemDetailCard {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 22px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.itemDetailCard__media {
+  min-height: 320px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8edf1 0%, #f5e4ea 100%);
+}
+
+.itemDetailCard__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemDetailCard__placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.itemDetailCard__emoji {
+  font-size: 72px;
+}
+
+.itemDetailCard__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.itemDetailCard__category {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--brand);
+}
+
+.itemDetailCard__title {
+  margin: 0;
+  font-size: 30px;
+  color: var(--text);
+}
+
+.itemDetailCard__description {
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(31, 31, 31, 0.74);
+}
+
+.itemDetailCard__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding-top: 6px;
+}
+
+.itemDetailCard__price {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--brand);
+}
+
+.itemDetailCard__stock {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(31, 31, 31, 0.62);
+}
+
+.itemDetailCard__successBox {
+  margin-top: 10px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(106, 63, 58, 0.06);
+  border: 1px solid rgba(106, 63, 58, 0.14);
+}
+
+.itemDetailCard__successText {
+  margin: 0;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.itemDetailCard__actions {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.itemDetailCard__buttonLink,
+.itemDetailCard__secondaryLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid var(--pill-border);
+}
+
+.itemDetailCard__buttonLink {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.itemDetailCard__secondaryLink {
+  background: var(--pill);
+  color: var(--brand);
+}
+
+@media (max-width: 860px) {
+  .itemDetailCard {
+    grid-template-columns: 1fr;
+  }
+
+  .itemDetailCard__media {
+    min-height: 240px;
+  }
+
+  .itemDetailCard__title {
+    font-size: 24px;
+  }
+}
