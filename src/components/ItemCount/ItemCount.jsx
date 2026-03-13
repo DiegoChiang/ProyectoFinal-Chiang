@@ -42,8 +42,6 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
         </button>
       </div>
 
-      <p className="itemCount__stock">Stock disponible: {stock}</p>
-
       <button
         className="itemCount__addButton"
         type="button"

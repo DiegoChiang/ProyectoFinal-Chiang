@@ -46,13 +46,6 @@
   color: var(--text);
 }
 
-.itemCount__stock {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--muted);
-}
-
 .itemCount__addButton {
   width: fit-content;
   display: inline-flex;

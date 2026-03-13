@@ -137,4 +137,22 @@
   .itemDetailCard__title {
     font-size: 24px;
   }
+
+  .itemDetailCard__body {
+    align-items: center;
+    text-align: center;
+  }
+
+  .itemDetailCard__info {
+    justify-content: center;
+  }
+
+  .itemDetailCard__successBox {
+    width: 100%;
+    text-align: center;
+  }
+
+  .itemDetailCard__actions {
+    justify-content: center;
+  }
 }
